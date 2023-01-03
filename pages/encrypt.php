@@ -20,7 +20,7 @@ if (isset($_POST['btn'])) {
         $encryptedText = $encryption->encrypt($text, $key);
       }
     } else{
-      $warn = !empty('') ? 'Ooops, plainteks or key or mode is required' : '';
+      $warn = 'Ooops, plainteks or key or mode is required';
     }
 }
 catch (EncryptException $e) {
@@ -74,7 +74,7 @@ catch (EncryptException $e) {
           </form>
           <div class="opacity">
             <?php if ($mode == '') {
-              echo $warn;
+              echo @$warn;
             } else if($mode == 'cbc'){
               echo "Mode: <hr>";
               echo $encryption->getName()."<br><br>";

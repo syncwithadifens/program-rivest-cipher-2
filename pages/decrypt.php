@@ -13,7 +13,7 @@ if (isset($_POST['btn'])) {
       $encryption = Encryption::getEncryptionObject('rc2-ecb');
       $decryptedText = $encryption->decrypt($cipher, $key);
     } else{
-      $warn = !empty('') ? 'Ooops, cipherteks or key is required' : '';
+      $warn = 'Ooops, cipherteks or key is required';
     }
 }
 catch (EncryptException $e) {
@@ -62,7 +62,7 @@ catch (EncryptException $e) {
           </form>
           <div class="opacity">
             <?php if ($cipher == '' && $key == '') {
-              echo $warn;
+              echo @$warn;
             } else{
               echo "Decrypted: <hr>";
               echo $decryptedText;
