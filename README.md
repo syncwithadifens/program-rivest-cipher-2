@@ -10,5 +10,3 @@ Kelompok 2
 | ![Landing Page](assets/github-demo/landing.png)       | ![Encryption Page](assets/github-demo/encryption.png) |
 | Decryption Page                                       |                                                       |
 | ![Decryption Page](assets/github-demo/decryption.png) |                                                       |
-
-Asad penganut aliran sesat

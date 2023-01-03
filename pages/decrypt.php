@@ -4,9 +4,10 @@ require('../vendor/autoload.php');
 use Encryption\Encryption;
 use Encryption\Exceptions\EncryptException;
 
+$cipher = !empty($_POST['cipher']) ? $_POST['cipher'] :'';
+$key  = !empty($_POST['key']) ? $_POST['key'] : '';
+
 if (isset($_POST['btn'])) {
-  $cipher = $_POST['cipher'];
-  $key  = $_POST['key'];
   try {
     if ($cipher != '' && $key != '') {
       $encryption = Encryption::getEncryptionObject('rc2-ecb');

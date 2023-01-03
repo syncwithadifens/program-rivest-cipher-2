@@ -4,10 +4,11 @@ require('../vendor/autoload.php');
 use Encryption\Encryption;
 use Encryption\Exceptions\EncryptException;
 
+$text = !empty($_POST['plain']) ? $_POST['plain'] : '';
+$key  = !empty($_POST['key']) ? $_POST['key'] : '';
+$mode = !empty($_POST['mode']) ? $_POST['mode'] : '';
+
 if (isset($_POST['btn'])) {
-  $text = $_POST['plain'];
-  $key  = $_POST['key'];
-  $mode = $_POST['mode'];
   try {
     if ($mode != '' && $text != '' && $key != '') {
       if ($mode == 'cbc') {
