@@ -6,6 +6,7 @@ use Encryption\Exceptions\EncryptException;
 
 $cipher = !empty($_POST['cipher']) ? $_POST['cipher'] :'';
 $key  = !empty($_POST['key']) ? $_POST['key'] : '';
+$warn = '';
 
 if (isset($_POST['btn'])) {
   try {
@@ -16,8 +17,8 @@ if (isset($_POST['btn'])) {
       $warn = 'Ooops, cipherteks or key is required';
     }
 }
-catch (EncryptException $e) {
-    echo $e;
+catch (Exception $e) {
+  $warn = 'Ooops, cipherteks and key is not match';
 }
 }
 ?>
@@ -61,8 +62,8 @@ catch (EncryptException $e) {
             <input type="submit" name="btn" class="btn opacity" value="Decrypt"></input>
           </form>
           <div class="opacity">
-            <?php if ($cipher == '' && $key == '') {
-              echo @$warn;
+            <?php if ($warn != '') {
+              echo $warn;
             } else{
               echo "Decrypted: <hr>";
               echo $decryptedText;
