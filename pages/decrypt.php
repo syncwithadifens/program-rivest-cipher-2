@@ -63,7 +63,7 @@ catch (Exception $e) {
             <input type="submit" name="btn" class="btn opacity" value="Decrypt"></input>
           </form>
           <div class="opacity">
-            <?php if ($warn != '') {
+            <?php if (!empty($warn)) {
               echo $warn;
             } else{
               echo "Decrypted: <hr>";
