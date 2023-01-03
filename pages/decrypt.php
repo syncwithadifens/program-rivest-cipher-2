@@ -13,7 +13,7 @@ if (isset($_POST['btn'])) {
       $encryption = Encryption::getEncryptionObject('rc2-ecb');
       $decryptedText = $encryption->decrypt($cipher, $key);
     } else{
-      $warn = 'Ooops, cipherteks or key is required';
+      $warn = !empty('') ? 'Ooops, cipherteks or key is required' : '';
     }
 }
 catch (EncryptException $e) {

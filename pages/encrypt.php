@@ -20,7 +20,7 @@ if (isset($_POST['btn'])) {
         $encryptedText = $encryption->encrypt($text, $key);
       }
     } else{
-      $warn = 'Ooops, plainteks or key or mode is required';
+      $warn = !empty('') ? 'Ooops, plainteks or key or mode is required' : '';
     }
 }
 catch (EncryptException $e) {
