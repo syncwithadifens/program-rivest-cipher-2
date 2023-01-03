@@ -8,6 +8,7 @@ $text = !empty($_POST['plain']) ? $_POST['plain'] : '';
 $key  = !empty($_POST['key']) ? $_POST['key'] : '';
 $mode = !empty($_POST['mode']) ? $_POST['mode'] : '';
 $warn = '';
+$encryptedText = '';
 
 if (isset($_POST['btn'])) {
   try {

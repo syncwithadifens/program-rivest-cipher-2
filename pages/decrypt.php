@@ -7,6 +7,7 @@ use Encryption\Exceptions\EncryptException;
 $cipher = !empty($_POST['cipher']) ? $_POST['cipher'] :'';
 $key  = !empty($_POST['key']) ? $_POST['key'] : '';
 $warn = '';
+$decryptedText = '';
 
 if (isset($_POST['btn'])) {
   try {
