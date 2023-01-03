@@ -1,0 +1,65 @@
+{
+    "packages": [
+        {
+            "name": "stymiee/php-simple-encryption",
+            "version": "1.0.7",
+            "version_normalized": "1.0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stymiee/php-simple-encryption.git",
+                "reference": "1defc03e2ff05728cf23ed9b7a5a7969bac08c89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stymiee/php-simple-encryption/zipball/1defc03e2ff05728cf23ed9b7a5a7969bac08c89",
+                "reference": "1defc03e2ff05728cf23ed9b7a5a7969bac08c89",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^8",
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "time": "2021-08-30T13:38:51+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Encryption\\": [
+                        "src/Encryption/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "John Conde",
+                    "email": "stymiee@gmail.com",
+                    "homepage": "https://stymiee.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The PHP Simple Encryption library is designed to simplify the process of encrypting and decrypting data while ensuring best practices are followed. By default is uses a secure encryption algorithm and generates a cryptologically strong initialization vector so developers do not need to becomes experts in encryption to securely store sensitive data.",
+            "homepage": "https://github.com/stymiee/php-simple-encryption",
+            "keywords": [
+                "encryption",
+                "openssl",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/stymiee/php-simple-encryption/issues",
+                "source": "https://github.com/stymiee/php-simple-encryption/tree/1.0.7"
+            },
+            "install-path": "../stymiee/php-simple-encryption"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

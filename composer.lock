@@ -1,0 +1,75 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b47740de0dafd5816f3d3d9a421be695",
+    "packages": [
+        {
+            "name": "stymiee/php-simple-encryption",
+            "version": "1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stymiee/php-simple-encryption.git",
+                "reference": "1defc03e2ff05728cf23ed9b7a5a7969bac08c89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stymiee/php-simple-encryption/zipball/1defc03e2ff05728cf23ed9b7a5a7969bac08c89",
+                "reference": "1defc03e2ff05728cf23ed9b7a5a7969bac08c89",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^8",
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Encryption\\": [
+                        "src/Encryption/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "John Conde",
+                    "email": "stymiee@gmail.com",
+                    "homepage": "https://stymiee.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The PHP Simple Encryption library is designed to simplify the process of encrypting and decrypting data while ensuring best practices are followed. By default is uses a secure encryption algorithm and generates a cryptologically strong initialization vector so developers do not need to becomes experts in encryption to securely store sensitive data.",
+            "homepage": "https://github.com/stymiee/php-simple-encryption",
+            "keywords": [
+                "encryption",
+                "openssl",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/stymiee/php-simple-encryption/issues",
+                "source": "https://github.com/stymiee/php-simple-encryption/tree/1.0.7"
+            },
+            "time": "2021-08-30T13:38:51+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
