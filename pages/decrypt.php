@@ -6,7 +6,7 @@ use Encryption\Exceptions\EncryptException;
 
 $cipher = !empty($_POST['cipher']) ? $_POST['cipher'] :'';
 $key  = !empty($_POST['key']) ? $_POST['key'] : '';
-$warn = 'null';
+$warn = '';
 
 if (isset($_POST['btn'])) {
   try {
@@ -62,7 +62,7 @@ catch (Exception $e) {
             <input type="submit" name="btn" class="btn opacity" value="Decrypt"></input>
           </form>
           <div class="opacity">
-            <?php if ($warn != 'null') {
+            <?php if ($warn != '' || $cipher == '') {
               echo $warn;
             } else{
               echo "Decrypted: <hr>";

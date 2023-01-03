@@ -8,7 +8,6 @@ $text = !empty($_POST['plain']) ? $_POST['plain'] : '';
 $key  = !empty($_POST['key']) ? $_POST['key'] : '';
 $mode = !empty($_POST['mode']) ? $_POST['mode'] : '';
 $warn = '';
-$encryptedText = '';
 
 if (isset($_POST['btn'])) {
   try {
@@ -75,7 +74,7 @@ catch (EncryptException $e) {
             <input type="submit" name="btn" class="btn opacity" value="Encrypt"></input>
           </form>
           <div class="opacity">
-            <?php if ($warn != '') {
+            <?php if ($warn != '' || $mode == '') {
               echo $warn;
             } else if($mode == 'cbc'){
               echo "Mode: <hr>";
