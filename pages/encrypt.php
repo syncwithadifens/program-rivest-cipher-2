@@ -80,7 +80,7 @@ catch (EncryptException $e) {
               echo "Mode: <hr>";
               echo $encryption->getName()."<br><br>";
               echo "iv: <hr>";
-              echo $iv . "<br><br>";
+              echo bin2hex($iv) . "<br><br>";
               echo "Encrypted: <hr>";
               echo $encryptedText;
             } else{
